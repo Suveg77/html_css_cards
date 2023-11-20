@@ -1,0 +1,66 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+  body {
+    margin: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.card-front {
+    width: 450px;
+    height: 290px;
+    background-color: black;
+    border: 1px solid #ddd;
+  
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    }
+
+h4{
+    font-size: larger;
+}
+
+
+.card-front header, 
+
+.card-front .logo{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.card-front header{
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 50px;
+    color: #fff;
+
+}
+
+.card-front .evm{
+    width: 50px;
+    display: flex;
+}
+
+
+.card-front .valid{
+    display: flex;
+    align-items: center;
+
+}
+
+.footer{
+    justify-content: space-between;
+}

@@ -1,0 +1,89 @@
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dad;
+}
+
+.wrapper{
+    background: #fff;
+    max-width: 900px;
+    width: 26%;
+    margin: 0 20px;
+    border-radius: 10px;
+    padding: 40px 50px 40px 40px;
+    box-shadow: 30px 30px 30px 30px rgba(117, 95, 95, 0.5);
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20%;
+    
+}
+
+label{
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px; 
+    line-height: 60px;
+    width: 200px;
+    padding-left: 25px;
+    color: #333;
+    z-index: 12;
+}
+
+label:hover{
+    color: #6d50d2;
+}
+
+.indicator{
+    height: 60px;
+    position: absolute;
+    left: 0px;
+    width: 101%;
+    top: 0;
+    border-radius: 12px;
+    background: #6d50d2;
+    transition: 0.3s;
+}
+
+#home:checked ~ .list .indicator{
+    top: 0;
+}
+
+#blog:checked ~ .list .indicator{
+    top: 60px;
+}
+
+#help:checked ~ .list .indicator{
+    top: 120px;
+}
+
+#code:checked ~ .list .indicator{
+    top: 180px;
+}
+
+#about:checked ~ .list .indicator{
+    top: 240px;
+}
+
